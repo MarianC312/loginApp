@@ -9,9 +9,14 @@
                 <div class="alert alert-dismissible alert-warning">
                     <strong class="d-block h5 mb-3"><i class="fa fa-info-circle"></i> Warning!</strong> 
                     <p>
-                        The value of <b><?php echo $key ?></b> has an error and can't be processed. <b>Try again</b> or contact an administrator.
+                        The value of <b><?php echo $key ?></b> has an error and can't be processed.
                     </p>
-                    <button type="button" onclick="divSwitchView('#login-process'); divSwitchView('#login-form');" class="btn btn-warning">Return</button>
+                    <p>
+                        <b>Try again</b> or contact an administrator.
+                    </p>
+                    <div class="text-right">
+                        <button type="button" onclick="divSwitchView('#login-process'); divSwitchView('#login-form');" class="btn btn-warning">Return</button>
+                    </div>
                 </div>
                 <?php
                 exit;
